@@ -79,6 +79,10 @@
     }
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return  NO;
+}
+
 #pragma mark - Core Data stack
 
 /**
