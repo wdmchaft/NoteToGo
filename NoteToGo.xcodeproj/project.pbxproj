@@ -21,6 +21,7 @@
 		1469782D146022E700AD1DC6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14697812146022E700AD1DC6 /* CoreData.framework */; };
 		14697835146022E700AD1DC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14697833146022E700AD1DC6 /* InfoPlist.strings */; };
 		14697838146022E700AD1DC6 /* NoteToGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14697837146022E700AD1DC6 /* NoteToGoTests.m */; };
+		2FE264011469660F004473FB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE264001469660E004473FB /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		14697834146022E700AD1DC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14697836146022E700AD1DC6 /* NoteToGoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteToGoTests.h; sourceTree = "<group>"; };
 		14697837146022E700AD1DC6 /* NoteToGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteToGoTests.m; sourceTree = "<group>"; };
+		2FE264001469660E004473FB /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				1469781E146022E700AD1DC6 /* AppDelegate.m */,
 				14697820146022E700AD1DC6 /* NoteToGo.xcdatamodeld */,
 				14697815146022E700AD1DC6 /* Supporting Files */,
+				2FE264001469660E004473FB /* MainWindow.xib */,
 			);
 			path = NoteToGo;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14697819146022E700AD1DC6 /* InfoPlist.strings in Resources */,
+				2FE264011469660F004473FB /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +427,7 @@
 				1469783D146022E700AD1DC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1469783E146022E700AD1DC6 /* Build configuration list for PBXNativeTarget "NoteToGoTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				14697840146022E700AD1DC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
