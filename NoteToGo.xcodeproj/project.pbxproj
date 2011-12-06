@@ -22,6 +22,7 @@
 		14697835146022E700AD1DC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14697833146022E700AD1DC6 /* InfoPlist.strings */; };
 		14697838146022E700AD1DC6 /* NoteToGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14697837146022E700AD1DC6 /* NoteToGoTests.m */; };
 		2FE264011469660F004473FB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE264001469660E004473FB /* MainWindow.xib */; };
+		6192E98A148E57D4008CC037 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 6192E989148E57D4008CC037 /* Note.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		14697836146022E700AD1DC6 /* NoteToGoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteToGoTests.h; sourceTree = "<group>"; };
 		14697837146022E700AD1DC6 /* NoteToGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteToGoTests.m; sourceTree = "<group>"; };
 		2FE264001469660E004473FB /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		6192E988148E57D4008CC037 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		6192E989148E57D4008CC037 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +119,11 @@
 		14697814146022E700AD1DC6 /* NoteToGo */ = {
 			isa = PBXGroup;
 			children = (
-				1469781D146022E700AD1DC6 /* AppDelegate.h */,
-				1469781E146022E700AD1DC6 /* AppDelegate.m */,
-				14697820146022E700AD1DC6 /* NoteToGo.xcdatamodeld */,
+				6192E98D148E594F008CC037 /* Boot */,
+				6192E98C148E593F008CC037 /* Nib */,
+				6192E980148E5127008CC037 /* Resources */,
+				6192E97E148E5097008CC037 /* Common */,
 				14697815146022E700AD1DC6 /* Supporting Files */,
-				2FE264001469660E004473FB /* MainWindow.xib */,
 			);
 			path = NoteToGo;
 			sourceTree = "<group>";
@@ -153,6 +156,40 @@
 				14697833146022E700AD1DC6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6192E97E148E5097008CC037 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6192E988148E57D4008CC037 /* Note.h */,
+				6192E989148E57D4008CC037 /* Note.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		6192E980148E5127008CC037 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14697820146022E700AD1DC6 /* NoteToGo.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6192E98C148E593F008CC037 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				2FE264001469660E004473FB /* MainWindow.xib */,
+			);
+			name = Nib;
+			sourceTree = "<group>";
+		};
+		6192E98D148E594F008CC037 /* Boot */ = {
+			isa = PBXGroup;
+			children = (
+				1469781E146022E700AD1DC6 /* AppDelegate.m */,
+				1469781D146022E700AD1DC6 /* AppDelegate.h */,
+			);
+			name = Boot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +301,7 @@
 				1469781B146022E700AD1DC6 /* main.m in Sources */,
 				1469781F146022E700AD1DC6 /* AppDelegate.m in Sources */,
 				14697822146022E700AD1DC6 /* NoteToGo.xcdatamodeld in Sources */,
+				6192E98A148E57D4008CC037 /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +397,7 @@
 				GCC_PREFIX_HEADER = "NoteToGo/NoteToGo-Prefix.pch";
 				INFOPLIST_FILE = "NoteToGo/NoteToGo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,6 +409,7 @@
 				GCC_PREFIX_HEADER = "NoteToGo/NoteToGo-Prefix.pch";
 				INFOPLIST_FILE = "NoteToGo/NoteToGo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
